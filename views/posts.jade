@@ -1,0 +1,40 @@
+appRoute = "http://localhost:3000/"
+filePath = "http://localhost/expressblog/"
+
+html
+	head
+		title NodeBlog
+		script(src=appRoute + "socket.io/socket.io.js")
+		script(src=filePath + "public/js/jquery.min.js")
+		script(src=filePath + "public/js/script.js")
+		link(rel="stylesheet", href=filePath + "public/css/styles.css")
+
+		body
+			div(class="wrapper")
+				ul(id="topnav")
+					li
+						a(href=appRoute) View Blog
+					li
+						a(href=appRoute + "admin") Update
+					li
+						a(href=appRoute + "posts") Insert
+
+				h1 Node Blog
+				div(id="left_col")
+					h3 Create New Post
+					
+					label(for="post_title") Title
+					input(type='text', id='post_title' value='')
+					
+					label(for="post_content") Content
+					textarea(id='post_content', value='', rows='10')
+
+					label(for="post_image") Link to an image
+					input(type='text', id='post_image' value='')
+					
+					input(type='button', value='Save', id='save')
+
+
+				div(id="right_col")
+					h3 My Posts
+					div(id="posts")

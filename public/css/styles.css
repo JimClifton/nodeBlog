@@ -1,0 +1,32 @@
+body { font-family:helvetica; padding-top:20px; font-size:0.9em; }
+
+.wrapper{ background:#fff; margin:0 auto; width:80%; overflow:hidden; }
+
+h1 { text-align: center; }
+
+input[type="text"] { border:1px solid #ddd; border-radius: 4px; padding:3px; width:90%; }
+input[type="button"] { border:none; background:#3267DA; border-radius: 4px; padding:3px 6px; color:#fff; cursor:pointer; }
+textarea { border:1px solid #ddd; border-radius: 4px; padding:3px; margin-bottom:10px; width:90%; }
+
+h4 { margin: 30px 0 10px 0; }
+h5 { margin-bottom:5px; }
+
+#posts { margin:0; padding:0; }
+#posts .post { border-top: 1px dotted #ccc; padding:3px; position:relative; }
+#posts span { color:#DB2E2E; top:2px; right:10px; padding-right:10px; cursor:pointer; }
+#posts .post:hover { background:#eee; }
+
+#left_col {float:left; width:30%;}
+#right_col {float:right; width:60%;}
+
+#left_col input,
+#left_col textarea{ display:block; }
+
+#blog_posts .post { float:left; width:200px; padding:10px; height:312px; border:1px solid #eee; margin:0 10px 20px 10px; overflow:hidden; }
+#blog_posts .post p { overflow:hidden; }
+#blog_posts .post img { width:200px; }
+#blog_posts h4 {margin-top:5px;}
+
+#topnav li { display:inline-block; margin-right:20px; list-style:none; }
+
+#admin_posts h4 { cursor:pointer; border-top:1px dotted #ccc; padding:10px; margin:0; }
