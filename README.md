@@ -1,4 +1,4 @@
 nodeBlog
 ========
 
-A simple blog using Node, SocketIO, Express, Jade with a MySQL DB
+A simple blog using Node, SocketIO, Express and Jade. With a MySQL module
